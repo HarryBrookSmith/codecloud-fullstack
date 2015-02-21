@@ -1,0 +1,85 @@
+
+$fa-font-path: "/bower_components/font-awesome/fonts";
+
+@import '../assets/fonts/icon-fonts.scss';
+/**
+ * App-wide Variables
+ */
+$codecloud-green: #73c8a9;
+$app-side-padding: 0.6%;
+/**
+ * App-wide Styles
+ */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #fff;
+    color: $codecloud-green;
+    padding: 0.2em 0;
+}
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+  background-color: #f7f7f7;
+}
+img {
+	max-width: 100%;
+}
+
+.center-vertically {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+/* unvisited link */
+a:link {
+    color: #fff;
+}
+
+/* visited link */
+a:visited {
+    color: #fff;
+}
+
+/* mouse over link */
+a:hover {
+    color: #F0F0F0;
+}
+
+/* selected link */
+a:active {
+    color: #fff;
+}
+
+::-webkit-input-placeholder {
+   color: #fff;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #fff;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff;  
+}
+
+:-ms-input-placeholder {  
+   color: #fff;  
+}
+
+// Component styles are injected through grunt
+// injector
+@import 'account/login/login.scss';
+@import 'admin/admin.scss';
+@import 'editor/editor.scss';
+@import 'header/header.scss';
+@import 'main/main.scss';
+// endinjector

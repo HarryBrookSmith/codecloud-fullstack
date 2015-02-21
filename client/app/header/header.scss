@@ -1,0 +1,66 @@
+$header-height: 37px;
+$side-padding: $app-side-padding;
+.container {}
+	.navbar-header {
+		background-color: $codecloud-green;
+	}
+	.navbar-header, .navbar-brand, .navbar-header__user {
+		height: $header-height;
+	}
+		.navbar-header__logo {
+			width: 51px;
+			position: absolute;
+			left: $side-padding;
+			top: 0.3em;
+		}
+		.navbar-brand {
+			display: none;
+			margin: 0 auto;
+			text-decoration: none;
+			color: #fff;
+			text-align: center;
+			display: block;
+			padding-top: 0.4em;
+			font-size: 17px;
+			letter-spacing: .06em;
+			font-weight: 500;
+			width: 114px;
+		}
+		.navbar-header__user {
+			position: absolute;
+			right: $side-padding;
+			position: absolute;
+			margin: 0;
+			padding: 0;
+			top: 0;
+			list-style: none;
+			margin-bottom: 0;
+
+
+			.nav-link {
+				text-decoration: none;
+				margin-left: 0.7em;
+				font-size: 16px;
+				span {
+					margin-left: 0.3em;
+					font-size: 21px;
+				}
+			}
+
+			ul {
+				margin: 0;
+				list-style-type: none;
+			}
+				li {
+					display: inline;
+					float: left;
+					margin-top: 0.47em;
+				}
+		}
+			
+				.navbar-header__welcome {
+					margin-top: 0;
+				}
+					.navbar-header {
+						text-decoration: none;
+					}

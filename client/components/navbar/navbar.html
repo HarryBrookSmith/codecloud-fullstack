@@ -1,0 +1,49 @@
+<div class="navbar navbar-default navbar-static-top" ng-controller="NavbarCtrl">
+  <div class="container">
+    <div class="navbar-header">
+      <div class="navbar-header__logo">
+        <a class="logo__link" href="/">
+          <img src="/assets/images/header/codecloud-logo.png" alt="Codecloud Logo">
+        </a>
+      </div>
+      <a href="/" class="navbar-brand">CodeCloud</a>
+      <div class="navbar-header__user">
+        <ul>
+          <li ng-hide="isLoggedIn()" ng-class="{active: isActive('/login')}"><a class="nav-link" href="/login">Login</a></li>
+
+          <li ng-show="isLoggedIn()">
+            <p class="navbar-header__welcome">Hey, {{ getCurrentUser().name }}!</p>
+          </li>
+
+          <li ng-show="isLoggedIn()" ng-class="{active: isActive('/settings')}">
+            <a href="" class="navbar-header nav-link"><span class="icon-cog"></span></a>    
+          </li>
+      <!--      <li ng-show="isAdmin()" ng-class="{active: isActive('/admin')}"><a href="/admin"><span class="icon-cog"></span></a></li> -->
+
+          <li ng-show="isLoggedIn()" ng-class="{active: isActive('/logout')}">
+            <a href="" class="navbar-header nav-link" ng-click="logout()"><span class="icon-exit"></span></a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+    <header class="cc-panel" id="banner">
+    <div class="cc-panel__nav">
+
+      <ul class="clearfix">
+      <li><a ng-hide="appState.state" href="" class="cc-nav"><span class="icon-search"></span></a></li>
+      <li><a ng-hide="appState.state" href="/editor/new" class="cc-nav"><span class="icon-cloud-upload"></span></a></li>
+      <li><a ng-show="appState.state" href="/" class="cc-nav"><span class="icon-circle-left"></span></a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <h1 ng-hide="appState.state" class="cc-panel__title">Hey {{ getCurrentUser().name }}, Here's your latest bits and pieces</h1>
+      <h1 ng-show="appState.state" class="cc-panel__title">{{editorForm.title}}</h1>
+    </div>
+  </header>
+</div>
+
+
+
+

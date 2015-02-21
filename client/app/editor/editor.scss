@@ -1,0 +1,80 @@
+.cc-editor {
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 0.07em;
+}
+	.cc-editor__info {
+		float: left;
+		width: 24%;	
+		height: 300px;
+		margin: 1%;
+	
+	}	
+		.info__field {
+			background-color: $codecloud-green;
+			margin-bottom: 0.4em;
+			padding: 4%;
+			width: 91%;
+		}
+		.btn {
+			width: 100%;
+			text-align: left;
+		}
+		.btn, .info__field {
+			font-size: 16px;
+			border: none;
+			color: #fff;
+		}
+		.button-group {
+			margin-top: 1em;
+			margin-bottom: 1em;
+		}
+		.btn:active {
+			background: rgba(115, 200, 169, 0.71);
+		}
+		// TAGS CODE - TIDY UP!!!!!
+		.tags {
+			background-color: $codecloud-green !important;
+			border: none !important;
+			box-shadow: none !important;
+			padding: 0 !important;
+
+			::-webkit-input-placeholder {
+			   color: $codecloud-green;
+			}
+
+			:-moz-placeholder { /* Firefox 18- */
+			   color: $codecloud-green;  
+			}
+
+			::-moz-placeholder {  /* Firefox 19+ */
+			   color: $codecloud-green;  
+			}
+
+			:-ms-input-placeholder {  
+			   color: $codecloud-green;  
+			}
+		}
+		.tag-item {
+			background: #fff !important;
+			color: $codecloud-green;
+			border: none !important;
+
+		}
+		.host {
+			margin: 0 !important;
+		}
+		.remove-button {
+			color: #C3C3C3 !important;
+		}
+	/* TEXT EDITOR */
+	.cc-editor__editor {
+		float: right;
+		width: 74%;
+		margin-top: 1%;
+	}
+	.CodeMirror {
+	  border: 1px solid #eee;
+	  height: auto;
+	  min-height: 450px;
+	}
+

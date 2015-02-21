@@ -1,0 +1,73 @@
+$side-padding: $app-side-padding;
+// Code Cloud Panel - Welcome user, provides instruction and also initiates search and 'new' snippet functionality
+.cc-panel {
+    background-color: #fff;
+    padding-top:1.5%;
+    padding-bottom:1.5%;
+    position: relative;
+    min-height: 26px;
+}
+    .cc-panel__title {
+        margin: 0 auto 0 auto;
+        font-size: 20px;
+        font-weight: 400;
+        width: 60%;
+        text-align: center;
+        color: $codecloud-green;
+
+    }
+    .cc-panel__nav {
+        height: 36px; 
+        position: absolute;
+        left: $side-padding;
+        top: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                display: inline;
+            }
+        }
+        .cc-nav {
+            display: block;
+            float: left;
+            margin-right: 1em;
+            span {
+                color: $codecloud-green;
+                font-size: 34px;
+            }
+            .icon-search {
+                font-size: 36px;
+
+            }
+            .icon-cloud-upload {
+                font-size: 41px;
+            }
+            
+        }
+    }
+
+// Code Cloud Browser Panel - Welcome user, provides instruction and also initiates search and 'new' snippet functionality
+.cc-browser {
+    background-color: #f7f7f7;
+}
+    .topic__section {
+        padding: 0.7% 0;
+    }
+        .section__header {
+            font-size: 25px;
+            font-weight: 400;
+            text-align: center;
+            margin: 0;
+            color: $codecloud-green;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+        .section__card-wrapper {
+
+        }
+            .card-wrapper__card {
+
+            }
