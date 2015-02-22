@@ -7,22 +7,11 @@
 			<input id="title" name="Title" class="info__field" type="text" ng-model="editorForm.title" placeholder="Title">
 			<input id="title" class="info__field" type="text" id="description" ng-model="editorForm.description" placeholder="Description">
 			<tags-input class="info__field" ng-model="topicTags" placeholder="+ Topic"></tags-input>
-			<tags-input class="info__field" ng-model="languageTags" placeholder="+ Language"></tags-input>
+			<tags-input class="info__field" ng-model="languageTags" max-tags="1" placeholder="+ Language">
+				<auto-complete source="loadLanguageTags($query)"></auto-complete>
+			</tags-input>
 			<tags-input class="info__field" ng-model="projectTags" placeholder="+ Project"></tags-input>
 		</form>
-		<div class="info__tags">
-			
-<!-- 			<div class="languages">
-				<tags-input ng-model="languageTags">
-			        <auto-complete source="loadTags($query)"></auto-complete>
-			    </tags-input>
-			</div>
-			<div class="projects">
-				<tags-input ng-model="projectTags">
-			        <auto-complete source="loadTags($query)"></auto-complete>
-			    </tags-input>
-			</div> -->
-		</div>
 		
 		<div class="button-group">
 			<button id="save" ng-click="saveSnippet()" class="info__field save btn">SAVE</button>

@@ -32,14 +32,14 @@
     <div class="cc-panel__nav">
 
       <ul class="clearfix">
-      <li><a ng-hide="appState.state" href="" class="cc-nav"><span class="icon-search"></span></a></li>
-      <li><a ng-hide="appState.state" href="/editor/new" class="cc-nav"><span class="icon-cloud-upload"></span></a></li>
-      <li><a ng-show="appState.state" href="/" class="cc-nav"><span class="icon-circle-left"></span></a></li>
+      <li><a ng-hide="appState.editorEnabled" href="" class="cc-nav"><span class="icon-search"></span></a></li>
+      <li><a ng-hide="appState.editorEnabled" href="/editor/new" class="cc-nav"><span class="icon-cloud-upload"></span></a></li>
+      <li><a ng-show="appState.editorEnabled" href="/" class="cc-nav"><span class="icon-circle-left"></span></a></li>
       </ul>
     </div>
     <div class="container">
-      <h1 ng-hide="appState.state" class="cc-panel__title">Hey {{ getCurrentUser().name }}, Here's your latest bits and pieces</h1>
-      <h1 ng-show="appState.state" class="cc-panel__title">{{editorForm.title}}</h1>
+      <h1 ng-hide="appState.editorEnabled" class="cc-panel__title">Hey {{ getCurrentUser().name }}, Here's your latest bits and pieces</h1>
+      <h1 ng-show="appState.editorEnabled" class="cc-panel__title">{{editorForm.title}}</h1>
     </div>
   </header>
 </div>

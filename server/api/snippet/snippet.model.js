@@ -6,9 +6,9 @@ var mongoose = require('mongoose'),
 var SnippetSchema = new Schema({
   title: { type: String, required: true },
   description: String,
-  topicTags: Array,
-  languageTags: Array,
-  projectTags: Array,
+  topicTags: {},
+  languageTags: {},
+  projectTags: {},
   snippet: { type: String, required:true },
   dateModified: { type: Date, required: true },
   createdBy: { type: String, required:true }

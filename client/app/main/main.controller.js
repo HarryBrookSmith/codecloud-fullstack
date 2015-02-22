@@ -13,6 +13,7 @@ angular.module('codecloudFullstackApp')
 
     $scope.isLoggedIn = Auth.isLoggedIn;
     $scope.getCurrentUser = Auth.getCurrentUser;
+    $scope.name = $scope.getCurrentUser().name;
 
     
   

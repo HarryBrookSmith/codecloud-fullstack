@@ -12,7 +12,7 @@ angular.module('codecloudFullstackApp')
 		    .state('editor.view', {
 		      	// If there's an url paramater supplied enter view post state
 		        templateUrl: 'app/editor/editor.html',
-		        url: '/{snippetId:int}',
+		        url: '/{snippetId:[0-9a-fA-F]{1,27}}',
 		        controller: 'EditorCtrl'
 		    })
 		    .state('editor.new', {

@@ -43,7 +43,7 @@ angular.module('codecloudFullstackApp', [
   })
   // This Data service can be injected into each of the required controllers as a parameter. By doing this, we are now attaching the data.model to an app service, which repairs the binding between the two controller models. https://thinkster.io/egghead/sharing-data-between-controllers
   .factory('AppState', function(){
-    return { state: null };
+    return { editorEnabled: null };
   })
 
   .run(function ($rootScope, $location, Auth) {
